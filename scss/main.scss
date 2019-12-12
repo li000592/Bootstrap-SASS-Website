@@ -1,0 +1,111 @@
+:root {
+    --primary-1: rgb(64,32,96);
+    --primary-2: rgb(0, 99, 65);
+    --black: #111214;
+    --secondary1: #595f6e;
+    --grey1:  #595f6e;
+    --grey2: rgb(122, 127, 139);
+    --grey3: rgb(208, 209, 212);
+    --red: rgb(229, 77, 38);
+    --blue: rgb(32, 98, 175);
+    --yellowgreen: rgb(129, 201, 76);
+    --pink: rgb(207, 100, 154);
+}
+// Load custom fonts at the top
+@import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
+
+// Override Bootstrap variables FIRST
+$font-family-base:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$theme-colors: (
+    "primary": rebeccapurple
+);
+
+// THEN load the full Bootstrap library
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// FINALLY add your additional custom styles here
+#nav-logo {
+    max-width: 35px;
+    height: auto;
+}
+.jum1 {
+    background: url("../img/jum-bg-sm.jpg") no-repeat center center; 
+    background-size: cover;
+}
+.jum2 {
+    background: url("../img/jum2-bg-sm.jpeg") no-repeat center center; 
+    background-size: cover;
+    height: 400px;
+}
+
+@media only screen and (min-width: 923px) {
+    .jum1 {
+        background: url("../img/jum-bg-big2.jpg") no-repeat center center; 
+
+        height: 500px;
+        -webkit-background-size: 100% 80%;
+        -moz-background-size: 100% ;
+        -o-background-size: 100% ;
+        background-size: 100% ;
+    }
+    .jum2 {
+        background: url("../img/jum3-bg-big.jpeg") no-repeat center center; 
+        height: 500px;
+        -webkit-background-size: 100% 80%;
+        -moz-background-size: 100% ;
+        -o-background-size: 100% ;
+        background-size: 100% ;
+    }
+    .adobe {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+}
+@media only screen and (max-width: 800px) {
+    .design {
+        min-width: 500px;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .adobe {
+        width: 50%;
+        margin-left: 25%
+    }
+
+}
+.fa-html5 {
+    font-size: 11rem;
+    color: var(--red);
+
+}
+.fa-css3-alt {
+    font-size: 11rem;
+    color: var(--blue);
+}
+.fa-js{
+    font-size: 11rem;
+    color: var(--yellowgreen);
+}
+.fa-sass{
+    font-size: 8rem;
+    color: var(--pink);
+}
+h1 {
+    font-family: 'Lilita One', cursive;
+}
+.bg-main {
+    background-color: var(--primary-1);
+    color: var(--grey3);
+    padding: 20px;
+    opacity:90%;
+    padding-right: 0;
+    
+}
+.navbar-brand {
+    padding-left: 30px;
+}
+.btn-outline-light {
+    color: var(--primary-1);
+}
